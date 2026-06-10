@@ -1,0 +1,21 @@
+services:
+  postgres-auto:
+    image: postgres:16
+    container_name: pg-auto
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: autodb
+    ports:
+      - "5437:5432"
+    volumes:
+      - pgdata_auto:/var/lib/postgresql/data
+      - ./backups:/backups
+    command: >
+      postgres
+        -c log_statement='ddl'
+        -c log_connections=on
+    restart: unless-stopped
+
+volumes:
+  pgdata_auto:
