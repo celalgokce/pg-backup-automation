@@ -1,0 +1,19 @@
+=========================================
+  OTOMATİK YEDEKLEME - Wed Jun 10 06:29:27 AM UTC 2026
+=========================================
+[INFO] Backup ID: 1
+
+INSERT01
+[INFO] Full backup alınıyor...
+[SUCCESS] Backup tamamlandı: daily/backup_20260610_062927.dump (67K)
+[INFO] Schema backup alınıyor...
+[INFO] Retention policy uygulanıyor...
+[INFO] 0 eski backup silindi (>7 gün)
+
+=========================================
+  ÖZET
+  Durum: success
+  Süre: 0s
+  Tablolar:      6
+  Satırlar:  5604
+=========================================
